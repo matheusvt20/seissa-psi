@@ -1,0 +1,691 @@
+.page {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 20% 0%, rgba(188, 137, 92, 0.16), transparent 34rem),
+    linear-gradient(135deg, #fbf6ee 0%, #f1e4d2 48%, #dfe5d0 100%);
+  color: #30291f;
+}
+
+.homePage {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background: #faf7f2;
+  color: #1a1a1a;
+}
+
+.homeTop {
+  flex: 0 0 auto;
+  padding: 1.25rem 1.5rem 0.5rem;
+  color: #3d5a3e;
+  font-size: 0.82rem;
+  font-weight: 700;
+  line-height: 1.4;
+  text-align: left;
+}
+
+.homeHero {
+  display: grid;
+  flex: 1 0 auto;
+  align-items: start;
+  justify-items: stretch;
+  padding: 0.85rem 1.5rem 3rem;
+}
+
+.homeContent {
+  width: min(100%, 560px);
+  padding: 0;
+  text-align: left;
+}
+
+.homeContent h1 {
+  margin: 0;
+  color: #1a1a1a;
+  font-size: clamp(1.95rem, 8.2vw, 3.15rem);
+  font-weight: 800;
+  letter-spacing: 0;
+  line-height: 1.08;
+}
+
+.homeSubtitle {
+  margin: 0.85rem 0 0;
+  color: #66615a;
+  font-size: 1.02rem;
+  line-height: 1.52;
+}
+
+.homeCta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 3.65rem;
+  margin-top: 1.25rem;
+  padding: 1rem 1.35rem;
+  border-radius: 999px;
+  background: #3d5a3e;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 800;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
+  transition:
+    background 180ms ease,
+    transform 180ms ease;
+}
+
+.homeCta:hover {
+  background: #314b32;
+  transform: translateY(-1px);
+}
+
+.homeNote {
+  margin: 0.55rem 0 0;
+  color: #9a948d;
+  font-size: 0.76rem;
+  line-height: 1.45;
+}
+
+.kicker {
+  margin: 0 0 0.8rem;
+  color: #596640;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.questionBlock h1,
+.resultShell h1 {
+  margin: 0;
+  color: #2d261d;
+  font-size: clamp(2.2rem, 11vw, 4.8rem);
+  line-height: 0.98;
+}
+
+.subtitle {
+  max-width: 34rem;
+  margin: 1rem 0 0;
+  color: #5e5344;
+  font-size: 1.08rem;
+  line-height: 1.55;
+}
+
+.primaryButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3.35rem;
+  width: 100%;
+  margin-top: 1.6rem;
+  padding: 0.9rem 1.25rem;
+  border-radius: 999px;
+  background: #50623a;
+  color: #fffdf7;
+  box-shadow: 0 18px 38px rgba(48, 61, 35, 0.23);
+  font-weight: 800;
+  text-align: center;
+  text-decoration: none;
+  transition:
+    transform 180ms ease,
+    background 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.primaryButton:hover {
+  background: #40522d;
+  box-shadow: 0 22px 44px rgba(48, 61, 35, 0.28);
+  transform: translateY(-1px);
+}
+
+.quizShell {
+  width: min(100%, 49rem);
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 1.15rem;
+}
+
+.quizShell {
+  display: flex;
+  flex-direction: column;
+}
+
+.quizHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  color: #6a5d4c;
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
+.backButton,
+.textButton {
+  padding: 0;
+  background: transparent;
+  color: #50623a;
+  cursor: pointer;
+  font-weight: 800;
+}
+
+.progressTrack {
+  width: 100%;
+  height: 0.56rem;
+  margin-top: 1.2rem;
+  overflow: hidden;
+  border-radius: 999px;
+  background: rgba(80, 98, 58, 0.16);
+}
+
+.progressTrack span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #50623a, #9a744d);
+  transition: width 240ms ease;
+}
+
+.questionBlock {
+  margin-top: clamp(3rem, 13vh, 7rem);
+}
+
+.questionBlock h1,
+.resultShell h1 {
+  font-size: clamp(2.05rem, 9vw, 4.1rem);
+}
+
+.optionsGrid {
+  display: grid;
+  gap: 0.78rem;
+  margin-top: 2rem;
+}
+
+.optionButton {
+  min-height: 4.25rem;
+  padding: 1rem;
+  border: 1px solid rgba(80, 98, 58, 0.2);
+  border-radius: 0.5rem;
+  background: rgba(255, 253, 248, 0.76);
+  color: #352e24;
+  cursor: pointer;
+  font-weight: 800;
+  line-height: 1.25;
+  text-align: left;
+  box-shadow: 0 12px 28px rgba(61, 45, 31, 0.07);
+  transition:
+    transform 160ms ease,
+    border-color 160ms ease,
+    background 160ms ease;
+}
+
+.optionButton:hover,
+.optionButtonSelected {
+  border-color: rgba(80, 98, 58, 0.72);
+  background: #fffaf1;
+  transform: translateY(-1px);
+}
+
+.resultPage {
+  min-height: 100vh;
+  overflow: hidden;
+  background:
+    linear-gradient(180deg, rgba(250, 247, 242, 0.18) 0%, #faf7f2 34rem),
+    #faf7f2;
+  color: #1a1a1a;
+}
+
+.resultHero {
+  display: grid;
+  gap: 1.5rem;
+  padding: 2rem 1.5rem 1.25rem;
+}
+
+.resultHero::after {
+  content: none;
+}
+
+.resultHero img {
+  order: 2;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  border-radius: 1.5rem;
+  object-fit: cover;
+  object-position: center;
+  box-shadow: 0 18px 42px rgba(58, 45, 31, 0.14);
+}
+
+.resultHeroContent {
+  order: 1;
+  width: min(100%, 58rem);
+  margin: 0 auto;
+}
+
+.resultPill {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.7rem;
+  margin: 0 0 1.15rem;
+  padding: 0.55rem 1rem;
+  border: 1px solid rgba(61, 90, 62, 0.22);
+  border-radius: 999px;
+  background: rgba(244, 242, 226, 0.86);
+  color: #2f5634;
+  font-size: 1rem;
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+.resultLabel {
+  margin: 0 0 0.8rem;
+  color: #3d5a3e;
+  font-size: 0.9rem;
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+.resultPill::before {
+  margin-right: 0.5rem;
+  content: "✓";
+  font-size: 0.9rem;
+}
+
+.resultHeroContent h1 {
+  max-width: 32rem;
+  margin: 0;
+  color: #171717;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2.75rem, 11vw, 4.1rem);
+  font-weight: 800;
+  letter-spacing: 0;
+  line-height: 0.94;
+}
+
+.resultHeroContent h1 span {
+  display: block;
+  color: #315b38;
+}
+
+.resultShell {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 58rem);
+  margin: 0 auto;
+  padding: 0 1.5rem 3rem;
+  text-align: left;
+}
+
+.diagnosisCard,
+.meaningCard,
+.checkoutBand {
+  border: 1px solid rgba(61, 90, 62, 0.1);
+  border-radius: 1.35rem;
+  background: rgba(255, 254, 250, 0.9);
+  box-shadow: 0 18px 44px rgba(58, 45, 31, 0.12);
+}
+
+.diagnosisCard {
+  display: grid;
+  grid-template-columns: 3.8rem 1fr;
+  gap: 1rem;
+  align-items: start;
+  margin-top: 0;
+  padding: 1.45rem;
+}
+
+.softIcon,
+.meaningIcon {
+  display: inline-grid;
+  width: 3.8rem;
+  height: 3.8rem;
+  place-items: center;
+  border-radius: 50%;
+  background: #f0efd7;
+  color: #315b38;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.diagnosisCard p,
+.meaningCard p {
+  margin: 0;
+  color: #1f1f1f;
+  font-size: 1.08rem;
+  line-height: 1.62;
+}
+
+.meaningCard {
+  display: grid;
+  grid-template-columns: 3.8rem 1fr;
+  gap: 1rem;
+  align-items: start;
+  margin-top: 1.15rem;
+  padding: 1.45rem;
+  background: rgba(242, 241, 222, 0.82);
+  box-shadow: none;
+}
+
+.meaningIcon {
+  background: #315b38;
+  color: #f9f3dd;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2.2rem;
+}
+
+.meaningCard h2,
+.manualOffer h2 {
+  margin: 0;
+  color: #315b38;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.75rem, 8vw, 3.15rem);
+  font-weight: 800;
+  line-height: 1;
+}
+
+.meaningCard p {
+  margin-top: 0.6rem;
+}
+
+.nextStepBlock {
+  margin-top: 1.25rem;
+  padding: 1.5rem;
+  border-radius: 1.2rem;
+  background: #f0ebe3;
+}
+
+.nextStepLabel {
+  margin: 0 0 0.75rem;
+  color: #315b38;
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.nextStepLead {
+  margin: 0;
+  color: #1f1f1f;
+  font-size: 1.12rem;
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+.nextStepText {
+  margin: 0.85rem 0 0;
+  color: #3f3a34;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.nextStepClosing {
+  margin: 0.9rem 0 0;
+  color: #315b38;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.manualShowcase {
+  display: grid;
+  gap: 1.4rem;
+  margin-top: 2.25rem;
+}
+
+.productFrame {
+  display: grid;
+  justify-items: center;
+}
+
+.productFrame img {
+  width: min(78vw, 18rem);
+  max-height: 29rem;
+  object-fit: contain;
+  filter: drop-shadow(0 22px 28px rgba(55, 42, 28, 0.22));
+}
+
+.manualOffer {
+  align-self: center;
+}
+
+.manualSubtitle {
+  margin: 0.7rem 0 0;
+  color: #315b38;
+  font-size: 1.08rem;
+  line-height: 1.5;
+}
+
+.manualBullets {
+  display: grid;
+  gap: 0;
+  margin: 1.1rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.manualBullets li {
+  position: relative;
+  padding: 1rem 0 1rem 2.85rem;
+  border-top: 1px solid rgba(61, 90, 62, 0.18);
+  color: #242424;
+  font-size: 1rem;
+  line-height: 1.42;
+}
+
+.manualBullets li::before {
+  position: absolute;
+  top: 0.88rem;
+  left: 0;
+  display: grid;
+  width: 2rem;
+  height: 2rem;
+  place-items: center;
+  border-radius: 50%;
+  background: #eef0d5;
+  color: #315b38;
+  content: "•";
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.checkoutBand {
+  display: grid;
+  gap: 1rem;
+  margin-top: 2rem;
+  padding: 1.15rem;
+  background: rgba(255, 254, 250, 0.7);
+}
+
+.priceBox {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.75rem 0.9rem;
+  align-items: center;
+}
+
+.priceBox::before {
+  display: grid;
+  grid-row: span 2;
+  width: 3.8rem;
+  height: 3.8rem;
+  place-items: center;
+  border-radius: 50%;
+  background: #fbecd2;
+  color: #315b38;
+  content: "R$";
+  font-weight: 900;
+}
+
+.priceBox span {
+  color: #1e1e1e;
+  font-size: 1.02rem;
+}
+
+.priceBox strong {
+  color: #315b38;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2.8rem, 14vw, 4.7rem);
+  line-height: 0.85;
+}
+
+.checkoutAction {
+  display: grid;
+}
+
+.resultCta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 3.6rem;
+  margin-top: 0;
+  padding: 1rem 1.35rem;
+  border-radius: 1rem;
+  background: linear-gradient(135deg, #3d6a42, #294d2e);
+  color: #ffffff;
+  box-shadow: 0 14px 25px rgba(49, 91, 56, 0.22);
+  font-size: 1.12rem;
+  font-weight: 800;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
+  transition:
+    background 180ms ease,
+    transform 180ms ease;
+}
+
+.resultCta:hover {
+  background: linear-gradient(135deg, #345f3a, #244629);
+  transform: translateY(-1px);
+}
+
+.resultSecure {
+  margin: 0.75rem 0 0;
+  color: #6c6962;
+  font-size: 0.84rem;
+  line-height: 1.45;
+  text-align: center;
+}
+
+@media (min-width: 720px) {
+  .homeContent {
+    max-width: 560px;
+  }
+
+  .homeCta {
+    width: auto;
+    min-width: 22rem;
+  }
+
+  .primaryButton {
+    width: auto;
+    min-width: 18rem;
+  }
+
+  .quizShell,
+  .resultShell {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+
+  .optionsGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .diagnosisCard {
+    grid-template-columns: 7.2rem 1fr;
+    align-items: center;
+    padding: 1.8rem 2.25rem;
+  }
+
+  .meaningCard {
+    grid-template-columns: 7rem 1fr;
+    align-items: center;
+    padding: 1.7rem 2rem;
+  }
+
+  .manualShowcase {
+    grid-template-columns: 0.82fr 1.18fr;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+
+  .checkoutBand {
+    grid-template-columns: 0.78fr 1.22fr;
+    align-items: center;
+    padding: 1.1rem 1.25rem;
+  }
+
+  .checkoutAction .resultCta {
+    width: 100%;
+    min-width: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .homeTop {
+    padding-top: 1.5rem;
+    text-align: center;
+  }
+
+  .homeHero {
+    align-items: center;
+    justify-items: center;
+    padding: 2rem 1.25rem 4rem;
+  }
+
+  .homeContent {
+    text-align: center;
+  }
+
+  .homeSubtitle {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .resultHero {
+    position: relative;
+    display: block;
+    min-height: 37rem;
+    padding-top: 4.6rem;
+    padding-bottom: 9rem;
+  }
+
+  .resultHero::after {
+    position: absolute;
+    inset: 0;
+    content: "";
+    background:
+      linear-gradient(90deg, rgba(250, 247, 242, 0.98) 0%, rgba(250, 247, 242, 0.9) 36%, rgba(250, 247, 242, 0.12) 72%),
+      linear-gradient(180deg, rgba(250, 247, 242, 0) 66%, #faf7f2 100%);
+  }
+
+  .resultHero img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: auto;
+    border-radius: 0;
+    object-position: 76% center;
+    box-shadow: none;
+    opacity: 0.92;
+  }
+
+  .resultHeroContent {
+    position: relative;
+    z-index: 1;
+  }
+
+  .resultHeroContent h1 {
+    font-size: clamp(4.4rem, 7.4vw, 5.55rem);
+    max-width: 33rem;
+    line-height: 0.88;
+  }
+
+  .resultShell {
+    margin-top: -7rem;
+    padding-bottom: 4rem;
+  }
+}

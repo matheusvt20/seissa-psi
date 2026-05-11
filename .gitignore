@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.env
+.env.*
+
+.DS_Store
+
+# Materiais brutos da cliente fora do app
+E-books/
+ChatGPT Image *.png
