@@ -1,4 +1,4 @@
-export const CHECKOUT_URL = 'https://pay.kiwify.com.br/'
+export const CHECKOUT_URL = 'https://pay.kiwify.com.br/u4b1hcT'
 
 export const quizQuestions = [
   {

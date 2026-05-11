@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import heroImage from '../assets/result-hero-mother-child.png'
 import productImage from '../assets/product-ipad-mobile.png'
@@ -8,6 +9,24 @@ import styles from '../styles/App.module.css'
 export default function Result() {
   const { answers } = useQuiz()
   const profile = resultProfiles[answers.behavior]
+
+  useEffect(() => {
+    if (typeof window.fbq === 'function') {
+      window.fbq('track', 'ViewContent')
+    }
+  }, [])
+
+  function handleCheckoutClick(event) {
+    event.preventDefault()
+
+    if (typeof window.fbq === 'function') {
+      window.fbq('track', 'InitiateCheckout')
+    }
+
+    window.setTimeout(() => {
+      window.location.href = CHECKOUT_URL
+    }, 120)
+  }
 
   if (!profile) {
     return (
@@ -105,7 +124,7 @@ export default function Result() {
             <strong>R$ 27,00</strong>
           </div>
           <div className={styles.checkoutAction}>
-            <a className={styles.resultCta} href={CHECKOUT_URL} target="_blank" rel="noreferrer">
+            <a className={styles.resultCta} href={CHECKOUT_URL} onClick={handleCheckoutClick}>
               Quero o Manual Agora →
             </a>
             <p className={styles.resultSecure}>Acesso imediato • Pagamento seguro</p>
