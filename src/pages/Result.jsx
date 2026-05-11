@@ -121,7 +121,7 @@ export default function Result() {
         <section className={styles.checkoutBand} aria-label="Comprar manual">
           <div className={styles.priceBox}>
             <span>por apenas</span>
-            <strong>R$ 27,00</strong>
+            <strong>R$ 17,00</strong>
           </div>
           <div className={styles.checkoutAction}>
             <a className={styles.resultCta} href={CHECKOUT_URL} onClick={handleCheckoutClick}>
