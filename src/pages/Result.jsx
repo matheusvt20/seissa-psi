@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import heroImage from '../assets/result-hero-mother-child.png'
-import productImage from '../assets/product-ipad-mobile.png'
+import heroImage from '../assets/result-hero-mother-child.webp'
+import productImage from '../assets/product-ipad-mobile.webp'
 import { useQuiz } from '../context/QuizContext.jsx'
 import { CHECKOUT_URL, resultProfiles } from '../data/quiz.js'
 import styles from '../styles/App.module.css'
@@ -48,7 +48,14 @@ export default function Result() {
   return (
     <main className={styles.resultPage}>
       <section className={styles.resultHero} aria-labelledby="result-title">
-        <img src={heroImage} alt="" />
+        <img
+          src={heroImage}
+          alt=""
+          width="1122"
+          height="1402"
+          decoding="async"
+          fetchPriority="high"
+        />
         <div className={styles.resultHeroContent}>
           <p className={styles.resultPill}>Diagnóstico do seu filho</p>
           <h1 id="result-title">
@@ -94,7 +101,14 @@ export default function Result() {
 
         <section className={styles.manualShowcase} aria-label="Oferta do manual">
           <div className={styles.productFrame}>
-            <img src={productImage} alt="Ser Mãe Depois do Abandono - Manual Prático" />
+            <img
+              src={productImage}
+              alt="Ser Mãe Depois do Abandono - Manual Prático"
+              width="640"
+              height="960"
+              loading="lazy"
+              decoding="async"
+            />
           </div>
 
           <div className={styles.manualOffer}>

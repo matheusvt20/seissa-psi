@@ -23,7 +23,7 @@ export default function Quiz() {
       }
 
       setCurrentIndex((index) => index + 1)
-    }, 180)
+    }, 90)
   }
 
   function goBack() {
